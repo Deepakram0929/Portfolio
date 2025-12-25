@@ -12,7 +12,7 @@ AOS.init({
 // Initialize Typed.js for the typing animation
 document.addEventListener('DOMContentLoaded', () => {
   const options = {
-    strings: ['AWS DevOps Engineer', 'Cloud Infrastructure Specialist', 'CI/CD Expert', 'Automation Engineer'],
+    strings: ['SI Engineer','CI/CD Expert'],
     typeSpeed: 50,
     backSpeed: 30,
     backDelay: 2000,

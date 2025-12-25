@@ -1441,3 +1441,4 @@ input:checked + .slider:before {
     gap: var(--spacing-sm);
   }
 }
+

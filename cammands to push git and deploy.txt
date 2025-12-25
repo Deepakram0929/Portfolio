@@ -1,0 +1,23 @@
+git init
+git remote add origin https://github.com/Deepakram0929/Portfolio.git
+git remote set-url origin https://github.com/Deepakram0929/Portfolio.git
+npm install --save-dev gh-pages
+npm audit
+  npm audit fix
+yarn add --dev gh-pages
+git add .
+git commit -m "Configured GitHub Pages deployment"
+git push -u origin main
+git commit -m "Configured GitHub Pages deployment"
+git push -u origin main
+git remote add origin https://github.com/Deepakram0929/Portfolio.git
+git remote set-url origin https://github.com/Deepakram0929/Portfolio.git
+git push -u origin main
+git branch -M main
+git push -u origin main
+npm run deploy
+history
+historyGet-History
+history
+git reflog
+doskey /history
