@@ -33,7 +33,7 @@ sudo systemctl enable docker
 sudo usermod -aG docker $USER
 newgrp docker
 ```
-### Step 4: 
+### Step 4: Create a Production Dockerfile (Vite + Node)
 ```
 git clone https://github.com/Deepakram0929/Portfolio.git
 cd Portfolio
@@ -58,5 +58,37 @@ CMD ["nginx", "-g", "daemon off;"]
 Save & exit (CTRL + O, ENTER, CTRL + X).
 
 ```
+### Step 5: Run below npm command
+```
+npm install 
+npm install aos
+npm run build
+```
+### Step 6: Build Docker Image
+```
+docker build -t portfolio-app .
+docker images
+```
+### Step 7: Run Docker Container
+```
+docker run -d -p 80:80 --name portfolio-container portfolio-app
+docker ps
+```
+### Step 8: Access the Application in browser:
+```
+http://<your-ubuntu-ip>
+```
+### Step 9: Allow Firewall (If Using Cloud / EC2)/ on premise
+```
+sudo ufw allow 80
+sudo ufw allow 443
+sudo ufw reload
+```
+### Step 10: Rebuild & redeploy:
+```
+docker stop portfolio-container
+docker rm portfolio-container
 
-
+docker build -t portfolio-app .
+docker run -d -p 80:80 --name portfolio-container portfolio-app
+```
