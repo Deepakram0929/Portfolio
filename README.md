@@ -1,3 +1,5 @@
+### Step 1: Connect to EC2 Instance
+```
 Portfolio/
 ├── Dockerfile
 ├── index.html
@@ -9,3 +11,5 @@ Portfolio/
 ├── js/
 ├── dist/                # Production build output
 └── README.md
+```
+### Step 2: 
