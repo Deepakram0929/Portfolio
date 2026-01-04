@@ -92,3 +92,19 @@ docker rm portfolio-container
 docker build -t portfolio-app .
 docker run -d -p 80:80 --name portfolio-container portfolio-app
 ```
+### Step 11: Create Docker Hub Repository
+```
+https://hub.docker.com
+create repository eg: deepakram0929/portfolio-app
+```
+### Step 12: Login to Docker Hub from Server
+```
+doker login -u <username>
+password
+```
+### Step 13: Once you see Login Succeeded, run below 
+```
+docker tag portfolio-app deepakram0929/portfolio-app:latest
+docker push deepakram0929/portfolio-app:latest
+```
+
